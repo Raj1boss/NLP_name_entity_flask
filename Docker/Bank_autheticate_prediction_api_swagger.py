@@ -4,7 +4,7 @@ import pickle
 from flasgger import Swagger
 from pdfminer.high_level import extract_text
 import re
-from nltk.stem import PorterStemmer
+#from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import nltk
@@ -136,7 +136,7 @@ def convert_text(text):
 def nlp_text():
     """Let's analysis the text  
     This is using docstrings for specifications
-    and we have tag entity using nlp in orginal text.
+    and we have tag entity using nlp from  orginal text.
     ---
     
     parameters:  
