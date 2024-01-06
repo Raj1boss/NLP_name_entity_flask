@@ -108,6 +108,9 @@ def pre_processing(text):
     text = re.sub(r"http\S+", "", text)
     return text
 
+
+    
+
 def convert_text(text):
     sent_tk=nltk.sent_tokenize(text)
     filtered_text=[]
@@ -165,7 +168,6 @@ def nlp_text():
     html_text=displacy.render(nl_text,style='ent')
     ent_text=re.sub('<[^<]+?>', '', html_text) 
     return ent_text
-    
     
     
     
